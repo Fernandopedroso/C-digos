@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro código github</title>
+
+<script lang="javascript">
+    function ty(){
+        let  nombre = form.nombre.value;
+        let numerocell = parseInt(form.numerocell.value);
+        let email = form.email.value;
+
+
+        if(nombre==""){ 
+            alert("Por favor preencha seu nome.")
+            form.nombre.focus()
+
+        }
+      else
+      if(document.form.nombre.value.length < 5){
+        alert("Ooops! digite seu nome completo.")
+        form.nombre.focus()
+      }
+
+      if(document.form.numerocell.value.length < 10){
+        alert("Favor informar seu número de celular.")
+        form.numerocell.focus()
+      }
+     
+      if(document.form.email.value.length > 45){
+        alert("Ops! E-mail muito grande.")
+        form.email.focus()
+      }
+
+    }
+</script>
+<style>
+    body{
+    background-image: url("form.jpg");
+
+    }
+
+    h1 { 
+        color: red;
+    }
+</style>
+</head>
+<body bgcolor="green">
+<form name="form">
+   Informe seu nome: <input type="text" name="nombre"><br><br>
+ Informe o número de seu celular: <input type="text" name="numerocell"><br><br>
+ Informe seu E-mail: <input type="email" name="email"><br><br>
+ <input type="button" value="Cadastrar" onclick="ty()">
+
+</form>    
+
+    
+</body>
+  
+</html>
